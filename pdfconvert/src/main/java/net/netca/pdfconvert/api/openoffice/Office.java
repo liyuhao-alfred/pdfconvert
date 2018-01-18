@@ -37,7 +37,6 @@ public class Office {
 		if (StringUtils.isEmpty(fileDataDto.getTargetExtension())) {
 			throw new PDFConvertException("目的文件扩展名为空！");
 		}
-		
 
 		String tempSourceExtension = "." + fileDataDto.getSourceExtension().replaceAll("\\.", "");
 		if (!PDFConstant.openoffice.contains(tempSourceExtension.toLowerCase())) {
